@@ -6,17 +6,262 @@ body {
     color: #333333;
 }
 
+header {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    font-size: 20px;
+}
+
 .container {
     background-color: #9C89B8;
     width: 352px;
     height: 464px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 #846ca7;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Buttons */
+
+button {
+    background-color: #F0E6EF;
+    color: #333333;
+    border: none;
+    box-shadow: 4px 4px 0 0 #846ca7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgba(209, 151, 179, 0.2);
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+    background-color: rgba(209, 151, 179, 0.5);
+    margin-top: 4px;
+    margin-left: 4px;
+    cursor: pointer;
 }
 
 .screen {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+    padding-right: 16px;
     background-color: #F0E6EF;
-    width: 304px;
-    height: 56px;
+    box-shadow: inset 4px 4px 0 0 rgb(132, 108, 167, .25);
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Row 1 */
+
+.ac-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.sqroot-btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.percent-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.divide-btn {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+/* Row 2 */
+
+.svn-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.eight-btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.nine-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.multiply-btn {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+/* Row 3 */
+
+.four-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.five-btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.six-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.minus-btn {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+/* Row 4 */
+
+.one-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.two-btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.three-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.plus-btn {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+/* Row 5 */
+
+.zero-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.decimal-btn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.plusminus-btn {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.equal-btn {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    justify-self: stretch;
+    align-self: stretch;
 }
 
 /* Footer */
