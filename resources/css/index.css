@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    background: rgb(239,195,230);
+    background: radial-gradient(circle, rgba(239,195,230,1) 0%, rgba(240,166,202,1) 71%);
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+.container {
+    background-color: #9C89B8;
+    width: 352px;
+    height: 464px;
+}
+
+.screen {
+    background-color: #F0E6EF;
+    width: 304px;
+    height: 56px;
+}
