@@ -10,10 +10,25 @@ body {
     background-color: #9C89B8;
     width: 352px;
     height: 464px;
+    margin: 0 auto;
 }
 
 .screen {
     background-color: #F0E6EF;
     width: 304px;
     height: 56px;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
 }
