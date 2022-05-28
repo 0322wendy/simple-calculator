@@ -14,8 +14,8 @@ header {
 
 .container {
     background-color: #9C89B8;
-    width: 352px;
-    height: 464px;
+    width: 300px;
+    height: 400px;
     margin: auto;
     padding: 32px;
     display: grid;
